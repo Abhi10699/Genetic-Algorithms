@@ -13,7 +13,7 @@ class DNA:
         a = self.dna[0]
         b = self.dna[1]
         
-        equation = abs(a + b - 4)
+        equation = abs(a + b - 87) # Find values of and A and B such that a + b = 15
         fitness = round(1 / (1+equation),3)
 
         if equation == 0:
