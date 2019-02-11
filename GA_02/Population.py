@@ -39,19 +39,7 @@ class Population:
         _sum = 0
         for i in range(0,len(self.population)):
            _sum = _sum + self.population[i].fitness
-
-        # For rach individual do this process
-#
-#        for i in self.population:
-#            rA = uniform(0,_sum)
-#            iSum = 0
-#            j = 0
-#            while(iSum < rA):
-#                if not j > len(self.population):
-#                    iSum = iSum + self.population[j].fitness
-#                    j = j + 1
-#
-#            self.matingPool.append(i)
+        
         probablity = []
         for i in self.population:
             probablity.append(i.fitness / _sum)
