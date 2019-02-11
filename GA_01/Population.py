@@ -37,7 +37,7 @@ class Population:
         
         probs = []
         for i in self.population:
-            p1 = round(1+(i.fitness / _sum),2)
+            p1 = round(i.fitness / _sum,2)
             probs.append(p1)
 
         for i in range(0,len(self.population)):
